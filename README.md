@@ -24,18 +24,18 @@ The following data structures were used in this project:
 
 - ArrayList
 
-##brief description of each of the components in the context of the code:
+## brief description of each of the components in the context of the code:
 
-###Controller
+### Controller
 The controller is responsible for handling incoming requests and returning appropriate responses. In the code, it have a UserController which handles requests related to the user entity. It has methods such as createUser, getUser, getAllUsers, updateUser, and deleteUser. These methods use the UserService to perform CRUD (create, read, update, delete) operations on the user data.
 
-###Service
+### Service
 The service layer contains the business logic of the project. It acts as an intermediary between the controller and the repository. In the code, it have a UserService which contains methods such as createUser, getUserById, getAllUsers, updateUser, and deleteUser. These methods perform validation on the input data and delegate database operations to the UserRepository.
 
-###Repository
+### Repository
 In the code, it have a UserRepository which extends the JpaRepository interface provided by Spring Data JPA. This interface provides basic CRUD operations such as save, findById, findAll, deleteById, etc.
 
-###Module
+### Module
 In the code, i have created a module named User which contains the User entity class. This class represents the data model of the user and contains properties such as id, name, username, address, and phoneNumber.
 
 Overall, these components work together to create a layered architecture for your project, which separates concerns and promotes modularity and maintainability.
